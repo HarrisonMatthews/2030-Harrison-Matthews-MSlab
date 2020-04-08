@@ -20,4 +20,8 @@
         <em>Artist:</em>
         @Model.Artist.Name
     </p>
+    <p class="button">
+        @Html.ActionLink("Add to cart", "AddToCart", 
+            "ShoppingCart", new { id = Model.AlbumId }, "")
+    </p>
 </div>
